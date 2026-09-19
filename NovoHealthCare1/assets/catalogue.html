@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>
+        NoveHealthcare Product Catalogue
+    </title>
+
+
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+
+            color: #333;
+
+            margin: 40px;
+
+        }
+
+
+        .header {
+
+            text-align: center;
+
+            border-bottom:
+                3px solid #00796b;
+
+            padding-bottom: 20px;
+
+        }
+
+
+        .logo {
+
+            width: 250px;
+
+        }
+
+
+        h1,
+        h2 {
+
+            color: #00796b;
+
+        }
+
+
+
+        .cover {
+
+            text-align: center;
+
+            padding: 80px 0;
+
+        }
+
+
+        .tagline {
+
+            font-size: 22px;
+
+            color: #0066cc;
+
+        }
+
+
+
+        .company {
+
+            background: #f1fafa;
+
+            padding: 25px;
+
+            border-radius: 10px;
+
+        }
+
+
+
+        .product {
+
+            border:
+
+                1px solid #ddd;
+
+            padding: 25px;
+
+            margin: 25px 0;
+
+            border-radius: 12px;
+
+        }
+
+
+
+        .product img {
+
+            width: 180px;
+
+            height: 180px;
+
+            object-fit: contain;
+
+            float: right;
+
+        }
+
+
+
+        .clear {
+
+            clear: both;
+
+        }
+
+
+
+        .footer {
+
+            margin-top: 50px;
+
+            background: #004d40;
+
+            color: white;
+
+            padding: 20px;
+
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+    <div class="header">
+
+        <img src="logo.svg" class="logo">
+
+
+        <h1>
+            NoveHealthcare
+        </h1>
+
+
+        <p class="tagline">
+
+            Care • Quality • Trust
+
+        </p>
+
+
+    </div>
+
+
+
+
+
+    <div class="cover">
+
+
+        <h1>
+            Product Catalogue
+        </h1>
+
+
+        <h2>
+            2026 Edition
+        </h2>
+
+
+        <p>
+
+            Quality Healthcare Products
+
+        </p>
+
+
+    </div>
+
+
+
+
+
+    <h2>
+        Company Profile
+    </h2>
+
+
+
+    <div class="company">
+
+
+        <p>
+
+            <strong>NoveHealthcare</strong>
+            is a pharmaceutical healthcare company based in
+            Agra, Uttar Pradesh, India.
+
+        </p>
+
+
+        <p>
+
+            Owner:
+            <strong>
+                Mr. Rajat Tomar
+            </strong>
+
+        </p>
+
+
+        <p>
+
+            Our objective is to provide reliable,
+            quality healthcare products with customer trust.
+
+        </p>
+
+
+    </div>
+
+
+<!-- newly added code -->
+    <h2>Our Products</h2>
+
+    <div id="catalogueProducts">
+    </div>
+    </div>
+
+<!-- newly added code -->
+
+
+    <div class="product">
+
+
+        <img src="product1.jpg">
+
+
+        <h2>
+            NoveCal Plus
+        </h2>
+
+
+        <p>
+
+            Category:
+            Calcium Supplement
+
+        </p>
+
+
+        <p>
+
+            Description:
+
+            Premium calcium and vitamin supplement
+            designed for nutritional support.
+
+        </p>
+
+
+        <p>
+
+            Packaging:
+
+            Available in standard healthcare packaging.
+
+        </p>
+
+
+        <div class="clear"></div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="product">
+
+
+        <img src="product2.jpg">
+
+
+        <h2>
+            NoveVit Capsules
+        </h2>
+
+
+        <p>
+
+            Category:
+            Multivitamin Supplement
+
+        </p>
+
+
+        <p>
+
+            Description:
+
+            Healthcare supplement supporting
+            daily nutritional requirements.
+
+        </p>
+
+
+        <div class="clear"></div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="product">
+
+
+        <img src="product3.jpg">
+
+
+        <h2>
+            NoveCough Syrup
+        </h2>
+
+
+        <p>
+
+            Category:
+            Cough Care
+
+        </p>
+
+
+        <p>
+
+            Description:
+
+            Healthcare syrup designed for
+            respiratory comfort.
+
+        </p>
+
+
+        <div class="clear"></div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="footer">
+
+
+        <p>
+            NoveHealthcare
+        </p>
+
+
+        <p>
+
+            Agra, Uttar Pradesh, India
+
+        </p>
+
+
+        <p>
+
+            Phone:
+            +91 XXXXX XXXXX
+
+        </p>
+
+
+        <p>
+
+            Email:
+            info@novehealthcare.com
+
+        </p>
+
+
+    </div>
+
+
+<!-- newly added code -->
+
+    <script>
+        let products = JSON.parse(localStorage.getItem("products")) || [];
+
+        let container = document.getElementById("catalogueProducts");
+
+        if (products.length === 0) {
+            container.innerHTML = `
+                <p></p>
+            `;
+        } else {
+            products.forEach(product => {
+                container.innerHTML += `
+                <div class="product">
+
+                    <h2>${product.name}</h2>
+
+                    <p>
+                        <strong>Category:</strong>
+                        ${product.category}
+                    </p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        ${product.description}
+                    </p>
+                    <img src="${product.image}" alt="Description of the image">
+
+                    ${product.image || 'product-placeholder.jpg'}
+
+                    <div class="clear"></div>
+
+                </div>
+                `;
+            });
+        }
+    </script>
+
+<!-- newly added code -->
+
+</body>
+
+</html>

@@ -1,0 +1,552 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    background:#ffffff;
+    color:#333;
+    line-height:1.6;
+}
+
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* HEADER */
+
+header{
+
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+}
+
+
+.nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+
+}
+
+
+
+.logo img{
+
+    width:190px;
+
+}
+
+
+
+nav a{
+
+    text-decoration:none;
+    color:#00695c;
+    font-weight:600;
+    margin-left:25px;
+    transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+    color:#00a88f;
+
+}
+
+
+
+
+
+/* HERO SECTION */
+
+
+.hero{
+
+    min-height:650px;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+
+    linear-gradient(
+    rgba(0,105,92,.85),
+    rgba(0,102,204,.80)
+    ),
+
+    url("assets/healthcare-bg.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+}
+
+
+
+.hero-content{
+
+    max-width:650px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.btn{
+
+    display:inline-block;
+
+    background:white;
+
+    color:#00796b;
+
+    padding:14px 30px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    margin:15px 10px 0 0;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+
+
+.whatsapp{
+
+    background:#25D366;
+
+    color:white;
+
+}
+
+
+
+
+
+/* SECTIONS */
+
+
+section{
+
+    padding:70px 0;
+
+}
+
+
+
+section h2{
+
+    text-align:center;
+
+    color:#00796b;
+
+    font-size:38px;
+
+    margin-bottom:45px;
+
+}
+
+
+
+
+.light{
+
+    background:#f3fbfa;
+
+}
+
+
+
+
+
+/* GRID */
+
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.box{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:
+
+    0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.box h3{
+
+    color:#00695c;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+/* PRODUCTS */
+
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
+.product-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 8px 25px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+}
+
+
+
+.product-card:hover{
+
+    transform:scale(1.04);
+
+}
+
+
+
+
+.product-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:contain;
+
+    border-radius:10px;
+
+}
+
+
+
+.product-card h3{
+
+    color:#00796b;
+
+    margin:15px 0;
+
+}
+
+
+
+
+.product-card button{
+
+    border:none;
+
+    background:#00796b;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+}
+
+
+
+.product-card button:hover{
+
+    background:#004d40;
+
+}
+
+
+
+
+
+.download{
+
+    display:block;
+
+    width:max-content;
+
+    margin:auto;
+
+    background:#0066cc;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+}
+
+
+
+
+
+/* CONTACT */
+
+
+.contact{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.map{
+
+    width:100%;
+
+    height:350px;
+
+    border:0;
+
+    border-radius:15px;
+
+}
+
+
+
+
+
+/* FLOATING WHATSAPP */
+
+
+.floating-whatsapp{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:60px;
+
+    height:60px;
+
+    background:#25D366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,.3);
+
+    z-index:999;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+    background:#004d40;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+
+
+
+/* MOBILE RESPONSIVE */
+
+
+@media(max-width:768px){
+
+
+.nav{
+
+    flex-direction:column;
+
+}
+
+
+
+nav{
+
+    margin-top:15px;
+
+}
+
+
+
+nav a{
+
+    margin:10px;
+
+    display:inline-block;
+
+}
+
+
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+
+section h2{
+
+    font-size:30px;
+
+}
+
+
+}

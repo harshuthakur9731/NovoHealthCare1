@@ -1,0 +1,64 @@
+<svg width="500" height="150" viewBox="0 0 500 150"
+xmlns="http://www.w3.org/2000/svg">
+
+
+<!-- Medical Cross -->
+
+<circle cx="55" cy="65" r="45"
+fill="#00796B"/>
+
+
+<rect x="45" y="30"
+width="20" height="70"
+rx="5"
+fill="white"/>
+
+
+<rect x="30" y="55"
+width="50" height="20"
+rx="5"
+fill="white"/>
+
+
+
+<!-- Company Name -->
+
+<text x="125"
+y="65"
+font-family="Arial"
+font-size="45"
+font-weight="bold"
+fill="#00695C">
+
+NOVE
+
+</text>
+
+
+<text x="125"
+y="105"
+font-family="Arial"
+font-size="32"
+font-weight="bold"
+fill="#0066CC">
+
+HEALTHCARE
+
+</text>
+
+
+
+<!-- Tagline -->
+
+<text x="125"
+y="135"
+font-family="Arial"
+font-size="16"
+fill="#555">
+
+Care • Quality • Trust
+
+</text>
+
+
+</svg>
