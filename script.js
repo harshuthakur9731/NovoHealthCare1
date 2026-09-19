@@ -60,7 +60,7 @@ Please share details.`;
 
 
         const whatsappNumber =
-        "91XXXXXXXXXX";
+        "917618206972";
 
 
         window.open(
@@ -160,7 +160,7 @@ new Date().getFullYear();
 footer.innerHTML +=
 `
 <p>
-Website maintained by NoveHealthcare
+Website maintained by NovoHealthcare
 </p>
 `;
 
@@ -182,7 +182,7 @@ window.addEventListener("load",()=>{
 
 console.log(
 
-"Welcome to NoveHealthcare Website"
+"Welcome to NovoHealthcare Website"
 
 );
 
