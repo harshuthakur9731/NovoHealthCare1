@@ -36,6 +36,7 @@ header{
     top:0;
     z-index:1000;
     box-shadow:0 3px 15px rgba(0,0,0,.08);
+    height:100px;
 
 }
 
@@ -86,7 +87,7 @@ nav a:hover{
 
 .hero{
 
-    min-height:650px;
+    min-height:550px;
 
     display:flex;
 
@@ -94,12 +95,12 @@ nav a:hover{
 
     background:
 
-    linear-gradient(
+    /* linear-gradient(
     rgba(0,105,92,.85),
     rgba(0,102,204,.80)
-    ),
+    ), */
 
-    url("assets/healthcare-bg.jpg");
+    url("assets/healthcare-bg.webp");
 
 
     background-size:cover;
