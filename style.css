@@ -47,13 +47,13 @@ header{
     justify-content:space-between;
     align-items:center;
     padding:15px 0;
-
+    /* margin-left: 10px; */
 }
 
 
 
 .logo img{
-
+    margin-right: auto;
     width:190px;
 
 }
@@ -70,6 +70,11 @@ nav a{
 
 }
 
+nav{
+
+   margin-right: 150px;
+
+}
 
 
 nav a:hover{
