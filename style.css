@@ -308,6 +308,8 @@ section h2{
 
     padding:25px;
 
+    max-width: 380px;
+
     text-align:center;
 
     box-shadow:
@@ -331,9 +333,11 @@ section h2{
 
 .product-card img{
 
-    width:100%;
+    width:140%;
 
-    height:220px;
+    height:240px;
+    display: block;
+    margin-left: -20%;
 
     object-fit:contain;
 
