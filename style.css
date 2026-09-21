@@ -320,6 +320,29 @@ section h2{
 
 }
 
+#productsContainer {
+
+    /* width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; */
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    #productsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #productsContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 .product-card:hover{

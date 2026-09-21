@@ -29,7 +29,7 @@
 
         <div class="container nav">
 
-            <div class="logo" >
+            <div class="logo">
 
                 <img style="height: 85px; width:auto" src="assets/logo.svg">
 
@@ -194,109 +194,74 @@
                 Our Products
             </h2>
 
+            <div class="products" id="productsContainer"></div>
 
+            <script>
+                const products = [
+                    {
+                        image: "assets/product1.jpg",
+                        name: "Novoliv 6G Syrup",
+                        description: "Liver & Digestive Health"
+                    },
+                    {
+                        image: "assets/product2.jpg",
+                        name: "Recuf-DX Cough Syrup",
+                        description: "Multivitamin Healthcare Support"
+                    },
+                    {
+                        image: "assets/product3.jpg",
+                        name: "Novoliv Liver Tonic Syrup",
+                        description: "Respiratory Healthcare Support"
+                    },
+                    {
+                        image: "assets/product4.jpg",
+                        name: "Novozolly Syrup",
+                        description: "Better Digestion & Improved Nutrient Absorption"
+                    },
+                    {
+                        image: "assets/product1.jpg",
+                        name: "Novoliv 6G Syrup",
+                        description: "Liver & Digestive Health"
+                    },
+                    {
+                        image: "assets/product2.jpg",
+                        name: "Recuf-DX Cough Syrup",
+                        description: "Multivitamin Healthcare Support"
+                    },
+                    {
+                        image: "assets/product3.jpg",
+                        name: "Novoliv Liver Tonic Syrup",
+                        description: "Respiratory Healthcare Support"
+                    },
+                    {
+                        image: "assets/product4.jpg",
+                        name: "Novozolly Syrup",
+                        description: "Better Digestion & Improved Nutrient Absorption"
+                    },
+                ];
 
-            <div class="products">
+                const container = document.getElementById("productsContainer");
 
+                products.forEach(product => {
 
+                    container.innerHTML += `
                 <div class="product-card">
 
-                    <img src="assets/product1.jpg">
+                    <img src="${product.image}" alt="${product.name}">
 
+                    <h3>${product.name}</h3>
 
-                    <h3>
-                        Novoliv 6G Syrup
-                    </h3>
+                    <p>${product.description}</p>
 
-
-                    <p>
-                        Calcium & Vitamin Supplement
-                    </p>
-
-
-                    <button>
-                        Enquire Now
-                    </button>
-
+                    <button>Enquire Now</button>
 
                 </div>
+                    `;  
 
-
-                <div class="product-card">
-
-
-                    <img src="assets/product2.jpg">
-
-
-                    <h3>
-                        Recuf-DX Cough Syrup
-                    </h3>
-
-
-                    <p>
-                        Multivitamin Healthcare Support
-                    </p>
-
-
-                    <button>
-                        Enquire Now
-                    </button>
-
-
-                </div>
-
-
-                <div class="product-card">
-
-
-                    <img src="assets/product3.jpg">
-
-
-                    <h3>
-                        Novoliv Liver Tonic Syrup
-                    </h3>
-
-
-                    <p>
-                        Multivitamin Healthcare Support
-                    </p>
-
-
-                    <button>
-                        Enquire Now
-                    </button>
-
-
-                </div>
-
-            </div>
+                });
+            </script>
 
             <br>
-
-            <div class="product-card">
-
-
-                    <img src="assets/product4.jpg">
-
-
-                    <h3>
-                        NOVOZOLLY Syrup
-                    </h3>
-
-
-                    <p>
-                        Multivitamin Healthcare Support
-                    </p>
-
-
-                    <button>
-                        Enquire Now
-                    </button>
-
-
-                </div>
-
-                <br>
 
 
             <a class="download" href="assets/catalogue.html">
