@@ -9,205 +9,109 @@
         NovoHealthcare Product Catalogue
     </title>
 
-
     <style>
+
         body {
-
             font-family: Arial, sans-serif;
-
             color: #333;
-
             margin: 40px;
-
         }
-
 
         .header {
-
             text-align: center;
-
-            border-bottom:
-                3px solid #00796b;
-
+            border-bottom:3px solid #00796b;
             padding-bottom: 20px;
-
         }
-
 
         .logo {
-
             width: 250px;
-
         }
 
-
-        h1,
-        h2 {
-
+        h1,h2 {
             color: #00796b;
-
         }
-
-
 
         .cover {
-
             text-align: center;
-
             padding: 80px 0;
-
         }
-
 
         .tagline {
-
             font-size: 22px;
-
             color: #0066cc;
-
         }
-
-
 
         .company {
-
             background: #f1fafa;
-
             padding: 25px;
-
             border-radius: 10px;
-
         }
-
-
 
         .product {
-
-            border:
-
-                1px solid #ddd;
-
+            border:1px solid #ddd;
             padding: 25px;
-
             margin: 25px 0;
-
             border-radius: 12px;
-
         }
-
-
 
         .product img {
-
             width: 180px;
-
             height: 180px;
-
             object-fit: contain;
-
             float: right;
-
         }
-
-
 
         .clear {
-
             clear: both;
-
         }
-
-
 
         .footer {
-
             margin-top: 50px;
-
             background: #004d40;
-
             color: white;
-
             padding: 20px;
-
             text-align: center;
-
         }
     </style>
-
 </head>
 
-
 <body>
-
-
 
     <div class="header">
 
         <img src="logo.svg" class="logo">
-
-
+        
         <h1>
             NovoHealthcare
         </h1>
-
-
         <p class="tagline">
-
             Care • Quality • Trust
-
         </p>
-
-
     </div>
 
-
-
-
-
     <div class="cover">
-
-
         <h1>
             Product Catalogue
         </h1>
-
-
         <h2>
             2026 Edition
         </h2>
-
-
         <p>
-
             Quality Healthcare Products
-
         </p>
-
-
     </div>
-
-
-
-
 
     <h2>
         Company Profile
     </h2>
 
-
-
     <div class="company">
-
-
         <p>
-
             <strong>NovoHealthcare</strong>
             is a pharmaceutical healthcare company based in
             Agra, Uttar Pradesh, India.
 
         </p>
-
-
         <p>
 
             Owner:
@@ -216,229 +120,76 @@
             </strong>
 
         </p>
-
-
         <p>
 
             Our objective is to provide reliable,
             quality healthcare products with customer trust.
 
         </p>
-
-
     </div>
 
-
-<!-- newly added code -->
     <h2>Our Products</h2>
 
     <div id="catalogueProducts">
     </div>
+    
     </div>
-
-<!-- newly added code -->
-
-
-    <div class="product">
-
-
-        <img src="product1.jpg">
-
-
-        <h2>
-            NoveCal Plus
-        </h2>
-
-
-        <p>
-
-            Category:
-            Calcium Supplement
-
-        </p>
-
-
-        <p>
-
-            Description:
-
-            Premium calcium and vitamin supplement
-            designed for nutritional support.
-
-        </p>
-
-
-        <p>
-
-            Packaging:
-
-            Available in standard healthcare packaging.
-
-        </p>
-
-
-        <div class="clear"></div>
-
-
-    </div>
-
-
-
-
-
-
-
-
-    <div class="product">
-
-
-        <img src="product2.jpg">
-
-
-        <h2>
-            NoveVit Capsules
-        </h2>
-
-
-        <p>
-
-            Category:
-            Multivitamin Supplement
-
-        </p>
-
-
-        <p>
-
-            Description:
-
-            Healthcare supplement supporting
-            daily nutritional requirements.
-
-        </p>
-
-
-        <div class="clear"></div>
-
-
-    </div>
-
-
-
-
-
-
-
-    <div class="product">
-
-
-        <img src="product3.jpg">
-
-
-        <h2>
-            Novoliv Liver Tonic Syrup
-        </h2>
-
-
-        <p>
-
-            Category:
-            Cough Care
-
-        </p>
-
-
-        <p>
-
-            Description:
-
-            Healthcare syrup designed for
-            respiratory comfort.
-
-        </p>
-
-
-        <div class="clear"></div>
-
-
-    </div>
-
-     <div class="product">
-
-
-        <img src="product4.jpg">
-
-
-        <h2>
-            NOVOZOLLY Syrup
-        </h2>
-
-
-        <p>
-
-            Category:
-            Cough Care
-
-        </p>
-
-
-        <p>
-
-            Description:
-
-
-        </p>
-
-
-        <div class="clear"></div>
-
-
-    </div>
-
-
-
-
-
-
 
     <div class="footer">
-
 
         <p>
             NovoHealthcare
         </p>
-
-
         <p>
-
             Agra, Uttar Pradesh, India
-
         </p>
-
-
         <p>
-
             Phone:
             +917618206972
-
         </p>
-
-
         <p>
-
             Email:
             novohealthcare7618@gmail.com
-
         </p>
 
-
     </div>
-
-
 <!-- newly added code -->
 
     <script>
-        let products = JSON.parse(localStorage.getItem("products")) || [];
+        <!-- let products = JSON.parse(localStorage.getItem("products")) || []; -->
+
+        const products = [
+            {
+                image: "product1.jpg",
+                name: "Novoliv 6G Syrup",
+                category:"",
+                packaging:"",
+                description: "",
+                
+            },
+            {
+                image: "product2.jpg",
+                name: "Recuf-DX Cough Syrup",                
+                category:"",
+                packaging:"",
+                description: "",
+            },
+            {
+                image: "product3.jpg",
+                name: "Novoliv Liver Tonic",
+                category:"",
+                packaging:"",
+                description: "",
+            },
+            {
+                image: "product4.jpg",
+                name: "Novozolly Syrup",
+                category:"",
+                packaging:"",
+                description: "",
+            }
+            
+        ];
 
         let container = document.getElementById("catalogueProducts");
 
@@ -451,6 +202,8 @@
                 container.innerHTML += `
                 <div class="product">
 
+                    <img src="${product.image}" alt="Description of the image">
+
                     <h2>${product.name}</h2>
 
                     <p>
@@ -462,10 +215,12 @@
                         <strong>Description:</strong>
                         ${product.description}
                     </p>
-                    <img src="${product.image}" alt="Description of the image">
 
-                    ${product.image || 'product-placeholder.jpg'}
-
+                    <p>
+                        <strong>Packaging:</strong>
+                        ${product.packaging}
+                    </p>
+                    
                     <div class="clear"></div>
 
                 </div>
@@ -479,47 +234,3 @@
 </body>
 
 </html>
-
-
-
-<!-- <div class="products" id="productsContainer"></div>
-
-<script>
-const products = [
-    {
-        image: "assets/product1.jpg",
-        name: "Novoliv 6G Syrup",
-        description: "Calcium & Vitamin Supplement"
-    },
-    {
-        image: "assets/product2.jpg",
-        name: "Recuf-DX Cough Syrup",
-        description: "Multivitamin Healthcare Support"
-    },
-    {
-        image: "assets/product3.jpg",
-        name: "NoveCough Syrup",
-        description: "Respiratory Healthcare Support"
-    }
-];
-
-const container = document.getElementById("productsContainer");
-
-products.forEach(product => {
-
-    container.innerHTML += `
-        <div class="product-card">
-
-            <img src="${product.image}" alt="${product.name}">
-
-            <h3>${product.name}</h3>
-
-            <p>${product.description}</p>
-
-            <button>Enquire Now</button>
-
-        </div>
-    `;
-
-});
-</script> -->
