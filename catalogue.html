@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>
+        NovoHealthcare Product Catalogue
+    </title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 40px;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom:3px solid #00796b;
+            padding-bottom: 20px;
+        }
+
+        .logo {
+            width: 250px;
+        }
+
+        h1,h2 {
+            color: #00796b;
+        }
+
+        .cover {
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .tagline {
+            font-size: 22px;
+            color: #0066cc;
+        }
+
+        .company {
+            background: #f1fafa;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .product {
+            border:1px solid #ddd;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 12px;
+        }
+
+        .product img {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .footer {
+            margin-top: 50px;
+            background: #004d40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <img src="logo.svg" class="logo">
+        
+        <h1>
+            NovoHealthcare
+        </h1>
+        <p class="tagline">
+            Care • Quality • Trust
+        </p>
+    </div>
+
+    <div class="cover">
+        <h1>
+            Product Catalogue
+        </h1>
+        <h2>
+            2026 Edition
+        </h2>
+        <p>
+            Quality Healthcare Products
+        </p>
+    </div>
+
+    <h2>
+        Company Profile
+    </h2>
+
+    <div class="company">
+        <p>
+            <strong>NovoHealthcare</strong>
+            is a pharmaceutical healthcare company based in
+            Agra, Uttar Pradesh, India.
+
+        </p>
+        <p>
+
+            Owner:
+            <strong>
+                Mr. OP Tomar
+            </strong>
+
+        </p>
+        <p>
+
+            Our objective is to provide reliable,
+            quality healthcare products with customer trust.
+
+        </p>
+    </div>
+
+    <h2>Our Products</h2>
+
+    <div id="catalogueProducts">
+    </div>
+    
+    </div>
+
+    <div class="footer">
+
+        <p>
+            NovoHealthcare
+        </p>
+        <p>
+            Agra, Uttar Pradesh, India
+        </p>
+        <p>
+            Phone:
+            +917618206972
+        </p>
+        <p>
+            Email:
+            novohealthcare7618@gmail.com
+        </p>
+
+    </div>
+<!-- newly added code -->
+
+    <script>
+        <!-- let products = JSON.parse(localStorage.getItem("products")) || []; -->
+
+        const products = [
+            {
+                image: "product1.jpg",
+                name: "Novoliv 6G Syrup",
+                category:"",
+                packaging:"",
+                description: "",
+                
+            },
+            {
+                image: "product2.jpg",
+                name: "Recuf-DX Cough Syrup",                
+                category:"",
+                packaging:"",
+                description: "",
+            },
+            {
+                image: "product3.jpg",
+                name: "Novoliv Liver Tonic",
+                category:"",
+                packaging:"",
+                description: "",
+            },
+            {
+                image: "product4.jpg",
+                name: "Novozolly Syrup",
+                category:"",
+                packaging:"",
+                description: "",
+            }
+            
+        ];
+
+        let container = document.getElementById("catalogueProducts");
+
+        if (products.length === 0) {
+            container.innerHTML = `
+                <p></p>
+            `;
+        } else {
+            products.forEach(product => {
+                container.innerHTML += `
+                <div class="product">
+
+                    <img src="${product.image}" alt="Description of the image">
+
+                    <h2>${product.name}</h2>
+
+                    <p>
+                        <strong>Category:</strong>
+                        ${product.category}
+                    </p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        ${product.description}
+                    </p>
+
+                    <p>
+                        <strong>Packaging:</strong>
+                        ${product.packaging}
+                    </p>
+                    
+                    <div class="clear"></div>
+
+                </div>
+                `;
+            });
+        }
+    </script>
+
+<!-- newly added code -->
+
+</body>
+
+</html>
