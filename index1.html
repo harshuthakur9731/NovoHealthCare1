@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovoHealthcare | Quality Medicines & Healthcare Solutions</title>
+
+    <meta name="description"
+        content="NovoHealthcare is a pharmaceutical distribution company based in Agra, Uttar Pradesh, focused on quality medicines, healthcare products, and dependable service.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Premium styling for the leadership section -->
+    <style>
+        .leadership-section {
+            background: #f5f8f8;
+        }
+
+        .leadership-intro {
+            max-width: 820px;
+            margin: 0 auto 38px;
+            text-align: center;
+        }
+
+        .leadership-eyebrow {
+            margin-bottom: 10px;
+            color: #2b827b;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .leadership-intro h2 {
+            margin-bottom: 14px;
+            color: #123448;
+        }
+
+        .leadership-intro p {
+            color: #536775;
+            line-height: 1.8;
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            align-items: stretch;
+        }
+
+        .leader-card {
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid #e1e9eb;
+            border-radius: 16px;
+            box-shadow: 0 10px 28px rgba(18, 52, 72, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .leader-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 34px rgba(18, 52, 72, 0.11);
+        }
+
+        .leader-top {
+            display: flex;
+            min-height: 150px;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #123448, #226b70);
+        }
+
+        .leader-initials {
+            display: flex;
+            width: 88px;
+            height: 88px;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(255, 255, 255, 0.72);
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+        }
+
+        .leader-content {
+            padding: 25px 24px 27px;
+        }
+
+        .leader-content h3 {
+            margin: 0 0 7px;
+            color: #123448;
+            font-size: 1.2rem;
+        }
+
+        .leader-role {
+            margin: 0 0 16px;
+            color: #2b827b;
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+        .leader-content p:last-child {
+            margin-bottom: 0;
+            color: #536775;
+            font-size: 0.95rem;
+            line-height: 1.75;
+        }
+
+        .leadership-values {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 34px;
+        }
+
+        .leadership-value {
+            padding: 22px;
+            border-left: 3px solid #2b827b;
+            border-radius: 8px;
+            background: #ffffff;
+        }
+
+        .leadership-value h3 {
+            margin: 0 0 8px;
+            color: #123448;
+            font-size: 1.05rem;
+        }
+
+        .leadership-value p {
+            margin: 0;
+            color: #536775;
+            font-size: 0.93rem;
+            line-height: 1.7;
+        }
+
+        .leadership-quote {
+            max-width: 900px;
+            margin: 38px auto 0;
+            padding: 28px 30px;
+            border-radius: 14px;
+            background: #123448;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .leadership-quote blockquote {
+            margin: 0 0 16px;
+            font-size: 1.08rem;
+            line-height: 1.85;
+        }
+
+        .leadership-quote p {
+            margin: 0;
+            color: #b9dcd6;
+            font-weight: 700;
+        }
+
+        @media (max-width: 900px) {
+            .leadership-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .leadership-values {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .leadership-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .leader-content {
+                padding: 22px;
+            }
+
+            .leadership-quote {
+                padding: 23px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav">
+            <div class="logo">
+                <img style="height: 85px; width: auto" src="assets/logo.svg" alt="NovoHealthcare logo">
+            </div>
+
+            <nav>
+                <a href="#home" style="font-size: x-large;">Home</a>
+                <a href="#about" style="font-size: x-large;">About</a>
+                <a href="#leadership" style="font-size: x-large;">Management</a>
+                <a href="#products" style="font-size: x-large;">Products</a>
+                <a href="#quality" style="font-size: x-large;">Quality</a>
+                <a href="#contact" style="font-size: x-large;">Contact</a>
+                <a href="admin/login.html" style="font-size: x-large;">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>
+                Better Health With
+                <br>
+                NovoHealthcare
+            </h1>
+
+            <p>Trusted Pharmaceutical Distribution & Healthcare Solutions</p>
+
+            <p>
+                Founded and managed by
+                <strong>Mr. OP Tomar</strong>
+            </p>
+
+            <div>
+                <a class="btn" href="#products">Explore Products</a>
+                <a class="btn whatsapp" href="https://wa.me/917618206972" target="_blank" rel="noopener noreferrer">
+                    WhatsApp Enquiry
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About NovoHealthcare</h2>
+
+            <div class="grid">
+                <div class="box">
+                    <h3>Who We Are</h3>
+                    <p>
+                        NovoHealthcare is a pharmaceutical distribution business located in Agra,
+                        Uttar Pradesh. We focus on supplying healthcare products and supporting
+                        dependable connections across the healthcare supply chain.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To build a trusted healthcare distribution brand known for reliability,
+                        responsible business practices, and a consistent focus on quality.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To support access to healthcare products through dependable service,
+                        strong business relationships, and a commitment to continuous improvement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management and leadership section -->
+    <section id="leadership" class="leadership-section">
+        <div class="container">
+            <div class="leadership-intro">
+                <div class="leadership-eyebrow">Our People • Our Purpose</div>
+                <h2>Leadership &amp; Management</h2>
+                <p>
+                    Leadership built on trust. Excellence driven by purpose.
+                    At NovoHealthcare, our management is focused on responsible pharmaceutical
+                    distribution, dependable service, strong partnerships, and long-term growth.
+                </p>
+                <p>
+                    Our team works to support efficient operations and professional relationships
+                    with suppliers, healthcare businesses, and customers throughout the supply chain.
+                </p>
+            </div>
+
+            <div class="leadership-grid">
+                <article class="leader-card">
+                    <div class="leader-top" aria-hidden="true">
+                        <div class="leader-initials">RT</div>
+                    </div>
+                    <div class="leader-content">
+                        <h3>Mr. OP Tomar</h3>
+                        <p class="leader-role">Founder &amp; Management</p>
+                        <p>
+                            Mr. OP Tomar leads NovoHealthcare's business direction and day-to-day
+                            management. His focus is on building trusted business relationships,
+                            supporting dependable service, and guiding the company's continued
+                            development in pharmaceutical distribution.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="leader-card">
+                    <div class="leader-top" aria-hidden="true">
+                        <div class="leader-initials">[DD]</div>
+                    </div>
+                    <div class="leader-content">
+                        <h3>Mr. Shivam Tomar</h3>
+                        <p class="leader-role">Director — Business Development</p>
+                        <p>
+                            Mr. Shivam Tomar leads business development initiatives at NovoHealthcare, 
+                            focusing on strategic growth, relationship building, 
+                            and expanding business opportunities in pharmaceutical distribution. 
+                            He works towards strengthening partnerships with suppliers, 
+                            distributors, and healthcare businesses while supporting the 
+                            company's long-term vision.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="leader-card">
+                    <div class="leader-top" aria-hidden="true">
+                        <div class="leader-initials">[SM]</div>
+                    </div>
+                    <div class="leader-content">
+                        <h3>[Manager's Full Name]</h3>
+                        <p class="leader-role">Senior Management — Operations</p>
+                        <p>
+                            [Add a short, verified biography describing the person's role in
+                            distribution operations, supply coordination, customer service,
+                            or other relevant responsibilities.]
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="leadership-values">
+                <div class="leadership-value">
+                    <h3>Integrity &amp; Accountability</h3>
+                    <p>
+                        We aim to build professional relationships through ethical conduct,
+                        transparency, and responsible decision-making.
+                    </p>
+                </div>
+
+                <div class="leadership-value">
+                    <h3>Reliable Distribution</h3>
+                    <p>
+                        We focus on responsive service, effective coordination, and responsible
+                        handling of products throughout applicable distribution processes.
+                    </p>
+                </div>
+
+                <div class="leadership-value">
+                    <h3>Long-Term Partnerships</h3>
+                    <p>
+                        We value lasting relationships with suppliers, business partners,
+                        and customers built on trust and mutual growth.
+                    </p>
+                </div>
+            </div>
+
+            <div class="leadership-quote">
+                <blockquote>
+                    “At NovoHealthcare, we believe that dependable service, strong partnerships,
+                    and responsible business practices are essential to building trust across
+                    the healthcare supply chain.”
+                </blockquote>
+                <p>Mr. OP Tomar · NovoHealthcare</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="light">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="products" id="productsContainer"></div>
+
+            <script>
+                const products = [
+                    {
+                        image: "assets/product1.jpg",
+                        name: "Novoliv 6G Syrup",
+                        description: "Liver & Digestive Health"
+                    },
+                    {
+                        image: "assets/product2.jpg",
+                        name: "Recuf-DX Cough Syrup",
+                        description: "Healthcare Support"
+                    },
+                    {
+                        image: "assets/product3.jpg",
+                        name: "Novoliv Liver Tonic Syrup",
+                        description: "Liver Healthcare Support"
+                    },
+                    {
+                        image: "assets/product4.jpg",
+                        name: "Novozolly Syrup",
+                        description: "Digestive Healthcare Support"
+                    },
+                    {
+                        image: "assets/product1.jpg",
+                        name: "Novoliv 6G Syrup",
+                        description: "Liver & Digestive Health"
+                    },
+                    {
+                        image: "assets/product2.jpg",
+                        name: "Recuf-DX Cough Syrup",
+                        description: "Healthcare Support"
+                    },
+                    {
+                        image: "assets/product3.jpg",
+                        name: "Novoliv Liver Tonic Syrup",
+                        description: "Liver Healthcare Support"
+                    },
+                    {
+                        image: "assets/product4.jpg",
+                        name: "Novozolly Syrup",
+                        description: "Digestive Healthcare Support"
+                    }
+                ];
+
+                const container = document.getElementById("productsContainer");
+
+                products.forEach((product) => {
+                    container.innerHTML += `
+                        <div class="product-card">
+                            <img src="${product.image}" alt="${product.name}">
+                            <h3>${product.name}</h3>
+                            <p>${product.description}</p>
+                            <a class="btn" href="https://wa.me/917618206972?text=${encodeURIComponent("Hello NovoHealthcare, I would like to enquire about " + product.name + ".")}" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+                        </div>
+                    `;
+                });
+            </script>
+
+            <br>
+            <a class="download" href="assets/catalogue.html">View Product Catalogue</a>
+        </div>
+    </section>
+
+    <section id="quality">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+
+            <div class="grid">
+                <div class="box">
+                    <h3>✔ Quality Focus</h3>
+                    <p>Committed to responsible sourcing and reliable healthcare products.</p>
+                </div>
+
+                <div class="box">
+                    <h3>✔ Trust</h3>
+                    <p>Building long-term, professional relationships with customers and partners.</p>
+                </div>
+
+                <div class="box">
+                    <h3>✔ Service</h3>
+                    <p>Professional support and responsive coordination for customer enquiries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="light">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <div class="contact">
+                <div>
+                    <h3>NovoHealthcare</h3>
+                    <p>
+                        Management:<br>
+                        Mr. OP Tomar
+                    </p>
+                    <p>📍 Agra, Uttar Pradesh, India</p>
+                </div>
+
+                <div>
+                    <h3>Get In Touch</h3>
+                    <p>📞 <a href="tel:+917618206972">+9176182 06972</a></p>
+                    <p>✉ <a href="mailto:novohealthcare7618@gmail.com">novohealthcare7618@gmail.com</a></p>
+                    <p>🌐 <a href="https://www.novohealthcare.com" target="_blank" rel="noopener noreferrer">www.novohealthcare.com</a></p>
+                </div>
+            </div>
+
+            <br>
+
+            <iframe
+                class="map"
+                title="Map showing Agra, Uttar Pradesh"
+                loading="lazy"
+                src="https://maps.google.com/maps?q=Agra%20Uttar%20Pradesh&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+        </div>
+    </section>
+
+    <a class="floating-whatsapp"
+       href="https://wa.me/917618206972"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contact NovoHealthcare on WhatsApp">
+        💬
+    </a>
+
+    <footer>
+        <p>© 2026 NovoHealthcare. All Rights Reserved.</p>
+        <p>Care • Quality • Trust</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
