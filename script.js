@@ -188,3 +188,60 @@ console.log(
 
 
 });
+
+
+// ===============================
+// Feedback & Rating 
+// ===============================
+
+    const stars = document.querySelectorAll(".star");
+    const selectedRating = document.getElementById("selectedRating");
+    const ratingText = document.getElementById("ratingText");
+
+    const ratingLabels = {
+        1: "Poor",
+        2: "Fair",
+        3: "Good",
+        4: "Very Good",
+        5: "Excellent"
+    };
+
+    stars.forEach((star) => {
+        star.addEventListener("click", () => {
+            const rating = Number(star.dataset.rating);
+            selectedRating.value = rating;
+
+            stars.forEach((item) => {
+                const active = Number(item.dataset.rating) <= rating;
+                item.classList.toggle("active", active);
+                item.setAttribute("aria-pressed", String(
+                    Number(item.dataset.rating) === rating
+                ));
+            });
+
+            ratingText.textContent =
+                `${rating} out of 5 — ${ratingLabels[rating]}`;
+        });
+    });
+
+    document.getElementById("feedbackForm").addEventListener(
+        "submit",
+        (event) => {
+            event.preventDefault();
+
+            const rating = Number(selectedRating.value);
+            const status = document.getElementById("feedbackStatus");
+
+            if (rating < 1 || rating > 5) {
+                status.textContent = "Please select a star rating.";
+                status.style.color = "#b42318";
+                return;
+            }
+
+            status.textContent =
+                "Thank you for sharing your feedback with NovoHealthcare. "+
+                "We value your suggestions and are always looking for ways to "+
+                "improve our services and strengthen our customer relationships."
+            status.style.color = "#087f5b";
+        }
+    );
